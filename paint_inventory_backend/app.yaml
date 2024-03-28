@@ -1,0 +1,7 @@
+runtime: nodejs18
+
+env: standard
+instance_class: F1
+
+env_variables:
+  MONGODB_ATLAS_URI: "mongodb+srv://cian79421:7vz53nffMl6U63oR@paint.lcj8gmh.mongodb.net/YOURDATABASE?retryWrites=true&w=majority"

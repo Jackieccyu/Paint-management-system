@@ -1,0 +1,235 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll */
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  font-size: 1rem; /* Base font size */
+}
+
+@media (max-width: 767.98px) {
+  body {
+    font-size: 0.9rem; /* Smaller font size for small screens */
+  }
+}
+
+.bg-purple {
+  background-color: #6f42c1 !important; /* Bootstrap的紫色 */
+}
+.text-white {
+  color: #fff !important;
+}
+
+/* Add this to your CSS file */
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+.text-dark {
+  color: #000 !important; /* Ensure dark text color overrides other styles */
+}
+
+
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f4f7f6; /* Light background for the whole board */
+}
+
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.kanban-column {
+  background-color: #ffffff; /* White background for columns */
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+  border-radius: 15px; /* Rounded corners */
+  padding: 1rem;
+  margin: 0;
+  width: 300px; /* Fixed width */
+  min-height: 400px; /* Fixed height */
+}
+
+.highlight {
+  background-color: lightblue; /* Style for when dragging over */
+}
+
+.dragging {
+  background-color: lightgreen; /* Style for while dragging */
+}
+
+.paint-list {
+  min-height: 100px;
+}
+
+.item {
+  border: none; /* No border */
+  border-radius: 15px; /* Rounded corners */
+  margin: 0 0 1rem 0; /* Space between cards */
+  padding: 0.75rem;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.08); /* Subtle shadow */
+  transition: box-shadow 0.2s; /* Smooth transition for hover effect */
+}
+
+.item {
+  padding: 1rem;
+  margin-bottom: 1rem; /* Space between cards */
+}
+
+.item:hover {
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.12); /* Deeper shadow on hover */
+}
+
+.item p {
+  margin: 0.5rem 0; /* Space between paragraphs */
+  font-size: 1rem; /* Readable font size */
+}
+
+.item.white {
+  color: #333333; /* Dark grey text for better readability */
+  background-color: #f0ebeb; /* Slightly off-white background */
+}
+
+
+/* Add styles for when a draggable item is being dragged */
+.item.dragging {
+  background-color: #d3d3d3;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+
+/* Style to apply to a column when it is being dragged over */
+.kanban-column.highlight {
+  background-color: #ad9f9f;
+}
+
+.status-heading {
+  font-size: 1.25rem; /* Larger font size */
+  font-weight: 700; /* Bold */
+  text-transform: capitalize; /* Capitalize first letter */
+  margin-bottom: 1rem; /* Add some space below the header */
+}
+
+
+/* Add this to your App.css */
+.profile-dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1050;
+}
+.parent-container {
+  overflow: visible;
+}
+.dropdown-menu a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.navbar-brand {
+  margin-right: 1rem; 
+}
+
+.navbar-brand-custom {
+  margin-left: 1rem; /* Adjust as needed */
+}
+
+.nav-dropdown-custom {
+  margin-right: auto;
+  margin-left: 1rem; /* Adjust as needed */
+}
+
+@media (max-width: 767.98px) {
+  .kanban-board {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  
+  .kanban-column {
+    width: 100%; /* Full width */
+    margin-bottom: 1rem; /* Space between columns when stacked */
+    min-height: auto; /* Auto height */
+  }
+
+  /* 調整選單以適應小屏幕 */
+  .navbar-nav {
+    margin: 0;
+  }
+
+  .navbar-collapse {
+    margin-top: 1rem;
+  }
+}
+
+/* Header styles */
+.header {
+  background-color: #343a40; /* Dark header background */
+  color: #ffffff; /* White text color */
+  padding: 0.5rem 1rem; /* Padding around the header */
+}
+
+/* Adjusts the size and margin of Update Inventory section */
+.update-inventory-form {
+  max-width: 600px; /* Set a max-width for the form */
+  margin: 2rem auto; /* Center it horizontally with margin */
+  padding: 1rem; /* Add padding inside the form */
+  background-color: #f8f9fa; /* Light grey background */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add shadow for depth */
+  border-radius: 0.5rem; /* Slightly rounded corners for the form */
+}
+
+/* Improve card visual hierarchy */
+.paint-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions for hover effects */
+}
+
+.paint-card:hover {
+  transform: translateY(-5px); /* Slightly raise the card on hover */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Increase shadow on hover */
+}
+
+
+/* Other responsive design adjustments */
+@media (max-width: 767.98px) {
+  .update-inventory-form {
+    margin: 1rem; /* Smaller margin on small screens */
+  }
+
+  /* Make the header text smaller on small screens */
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Adjustments for tablets can go here */
+}
+
+@media (min-width: 992px) {
+  /* Adjustments for desktops can go here */
+  .header {
+    padding: 0.75rem 2rem; /* More padding on larger screens */
+  }
+}
