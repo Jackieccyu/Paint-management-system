@@ -1,5 +1,8 @@
 # Paint Company Stock Status Web Application README
 
+Website link
+https://paintmanagment.netlify.app/
+
 ## Introduction
 This repository contains the source code for a web application that displays the stock status of a paint company. 
 The application utilizes React for the frontend and Node.js with Express for the backend. 
@@ -62,7 +65,6 @@ This will start both the frontend and backend servers locally, allowing you to a
 ## Deployment
 The backend service has been deployed to the Google Cloud Platform. For deployment instructions or to make modifications, refer to the documentation provided by GCP.
 
-## Only need Run Frontend side.
 
 ## Features
 Stock Status Display: View the current stock status of various paint products.
