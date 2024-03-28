@@ -5,6 +5,37 @@ This repository contains the source code for a web application that displays the
 The application utilizes React for the frontend and Node.js with Express for the backend. 
 The backend service has been deployed to the Google Cloud Platform (GCP) and is accessible via the following URL: https://bcpublicpaint.uc.r.appspot.com.
 
+## Frontend (React)
+
+- **User Interface**:
+     - Simple and intuitive UI, considering John's needs, it should be easy to use on mobile phones.
+     - For Jane, also needs to perform well on a tablet or laptop.
+     - A "kanban style" interface should be provided to display the inventory status (available, low stock, out of stock) of various paint materials.
+     - Paint colors only available in blue, grey, black, white or purple
+- **Functional Requirements**:
+     - Allows John and Jane to view the status of all paints.
+     - Allow Jane to update paint inventory.
+     - Allows painters to view paint inventory and update quickly.
+     - Should support different user roles and permissions (such as Adam's user management function).
+
+## Backend (Node.js)
+
+- **Data Management**:
+     - Design and implement a data model for paint inventory, which requires 5 colors: blue, gray, black, white or purple.
+     - Provide API endpoints to support viewing and updating paint inventory quantities and colors.
+- **User and Permission Management**:
+     - Implement user authentication and authorization mechanisms.
+     - Manage user roles and permissions, allowing specific operations (such as inventory updates) to be restricted based on user role.
+     - Create the following users John, Jane, Adam, Painters
+- **Business logic**:
+     - Handle inventory status update logic (such as changing from "Available" to "Low Stock" or "Out of Stock").
+
+## DevOps
+
+Currently deployed to Google Cloud Platform
+
+
+
 
 ## Installation
 
